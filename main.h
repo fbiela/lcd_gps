@@ -43,7 +43,7 @@
 #define D5S 5000                // delay 5s
 
 // objects
-LiquidCrystal lcd(LCD_00, LCD_01, LCD_02,LCD_03, LCD_04, LCD_05);
+LiquidCrystal lcd(LCD_00, LCD_01, LCD_02, LCD_03, LCD_04, LCD_05);
 SoftwareSerial seGPS(GPS_RX, GPS_TX);
 TinyGPS gps;
 
@@ -92,7 +92,7 @@ void Counter(int X = 0, int Y = 0) {
   for (size_t i = 0; i < 99; i++) {
     lcd.setCursor(X, Y);
     lcd.print(i);
-    lcd.setCursor(X+2, Y);
+    lcd.setCursor(X + 2, Y);
     lcd.print("%");
     delay(50);
   }
